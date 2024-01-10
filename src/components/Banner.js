@@ -8,7 +8,7 @@ export const Banner = () => {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = ["BI Developer", "Front-end developer", "UI/UX Designer"];
     const [text, setText] = useState('');
     const [index, setIndex] = useState(1);
     const [delta, setDelta] = useState(300 - Math.random * 100) ;
@@ -53,7 +53,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Bem-vindo ao meu portifólio</span>
-                        <h1>{`Hi I'm Fernanda Mello `}<spam className="wrap">{text}</spam></h1>
+                        <h1>{`Oi, sou a Fernanda: \n`}<spam className="wrap">{text}</spam></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/> </button>
                     </Col>
