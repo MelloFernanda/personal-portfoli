@@ -2,8 +2,17 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
 import headerImg from "../assets/img/header-img.svg"
+import { useState } from "react";
 
 export const Banner = () => {
+
+    const [loopNum, setLoopNum] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+    const [text, setText] = useState('');
+    const [delta, setDelta] = useState(300 - Math.random * 100) ;
+    const period = 2000;
+
     return(
         <section className="banner" id="home">
             <Container>
