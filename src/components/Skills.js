@@ -2,9 +2,10 @@ import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter1 from "../assets/img/meter1.png";
+import meter2 from "../assets/img/meter2.png";
+import meter3 from "../assets/img/meter3.png";
+import meter4 from "../assets/img/meter4.png";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -35,23 +36,23 @@ export const Skills = () => {
                   <div className="col-12">
                       <div className="skill-bx wow zoomIn">
                           <h2>Skills</h2>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                          <p>Minhas principais habilidades estão detalhadas abaixo.<br></br>Explore e descubra como minha experiência pode agregar valor ao seu projeto ou equipe.</p>
                           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                               <div className="item">
-                                  <img src={meter1} alt="Image" />
-                                  <h5>Web Development</h5>
-                              </div>
-                              <div className="item">
                                   <img src={meter2} alt="Image" />
-                                  <h5>Brand Identity</h5>
+                                  <h5>Cientista de Dados</h5>
                               </div>
                               <div className="item">
                                   <img src={meter3} alt="Image" />
-                                  <h5>Logo Design</h5>
+                                  <h5>BI Development</h5>
+                              </div>
+                              <div className="item">
+                                  <img src={meter2} alt="Image" />
+                                  <h5>Front-end Development</h5>
                               </div>
                               <div className="item">
                                   <img src={meter1} alt="Image" />
-                                  <h5>Web Development</h5>
+                                  <h5>Web Design</h5>
                               </div>
                           </Carousel>
                       </div>
