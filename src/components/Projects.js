@@ -1,61 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { projects1, projects2, projects3  } from '../data/projects.js'
+
+import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Projects = () => {
-
-  const projects1 = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      url: "",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      url: "",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      url: "",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      url: "",
-    },
-  ];
-
-  const projects2 = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      url: "",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      url: "",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      url: "",
-    },
-  ];
 
   return (
     <section className="project" id="projects">
@@ -65,7 +16,7 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
+                <h2>Projetos</h2>
                 <p>Confira alguns dos meus projetos! Para uma visão mais detalhada, visite meu LinkedIn e GitHub. Estou ansioso para compartilhar mais sobre minha jornada!</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -81,6 +32,7 @@ export const Projects = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
+                      <p>Aqui estão alguns exemplos de projetos de dashboards no Power BI. <br/>Porém, se sua jornada incluir a busca por projetos relacionados à aprendizagem de máquina, não hesite em explorar meu <a href="https://github.com/MelloFernanda" target="_blank">GitHub</a>.</p>
                       <Row>
                         {
                           projects1.map((project, index) => {
@@ -95,7 +47,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Explorando as fronteiras do desenvolvimento front-end, estou em um mergulho nas vastidões do Java Script e React. Aqui estão alguns dos projetos que navegam por essas tecnologias estelares.</p>
                       <Row>
                         {
                           projects2.map((project, index) => {
@@ -110,7 +62,19 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Estas são as minhas jornadas e realizações como um "explorador do design de experiência do usuário", navegando pelos vastos cosmos da criação visual e ergonômica.</p>
+                      <Row>
+                        {
+                          projects3.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
