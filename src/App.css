@@ -203,6 +203,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.banner a{
+  text-decoration: none;
+}
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -350,6 +353,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+}
+.project a{
+  text-decoration: none;
+  color: inherit;
 }
 .project .nav.nav-pills {
   width: 72%;

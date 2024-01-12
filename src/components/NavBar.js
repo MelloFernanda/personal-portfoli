@@ -48,9 +48,9 @@ export const NavBar = () => {
                 <a href="https://github.com/MelloFernanda" target="_blank"><img src={navIcon2} alt="símbolo github" /></a>
                 <a href="https://www.instagram.com/fernandaamello/" target="_blank"><img src={navIcon3} alt="símbolo instagram" /></a>
               </div>
-              <span to='#connect'>
+              <a href='#connect'>
                 <button className="vvd"><span>Vamos nos conectar?</span></button>
-              </span>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>
