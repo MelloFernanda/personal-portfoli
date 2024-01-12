@@ -461,7 +461,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/** Projects Css **/
+/** Contact **/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -533,6 +533,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+
+/** Contact2 **/
+.center-horizontal{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  width: 80%;
+  height: 200px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.box .title{
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.contact2{
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  width: 80%;
+  margin: 7px 0px;
+  height: max(45px, 1vh);
+  border-radius: 50px;
+
+  overflow: hidden;
+}
+.contact2 img{
+  display: block; 
+  height:75%;
+  width: auto;
+
+  margin: auto 10px;
+}
+.contact2 a{
+  color: white;
+}
 
 .App {
   text-align: center;

@@ -3,7 +3,7 @@ import projImg2 from "../assets/img/dash2.png";
 import projImg3 from "../assets/img/dash3.png";
 import projImg4 from "../assets/img/dash4.png";
 import projImg5 from "../assets/img/project-front1.png";
-import projImg6 from "../assets/img/project-front1.png";
+import projImg6 from "../assets/img/project-front2.png";
 import projImg7 from "../assets/img/project-front1.png";
 import projImg8 from "../assets/img/project-ux1.png";
 import projImg9 from "../assets/img/project-ux2.png";

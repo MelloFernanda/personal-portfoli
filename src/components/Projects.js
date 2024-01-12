@@ -21,13 +21,13 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">BI Projects</Nav.Link>
+                      <Nav.Link eventKey="first">Projetos BI</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Front-end Projects</Nav.Link>
+                      <Nav.Link eventKey="second">Projetos Front-end</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">UI/UX Projects</Nav.Link>
+                      <Nav.Link eventKey="third">Projetos UI/UX </Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
